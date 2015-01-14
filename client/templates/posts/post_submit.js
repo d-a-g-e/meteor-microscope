@@ -35,5 +35,9 @@ Template.postSubmit.events({
       
       Router.go('postPage', {_id: result._id});  
     });
+  },
+  'click btn-warning': function(e) {
+    e.preventDefault();
+    console.log('probando!');
   }
 });

@@ -1,6 +1,6 @@
 <template name="notifications">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-    Notifications
+    Notificaciones
     {{#if notificationCount}}
       <span class="badge badge-danger">{{notificationCount}}</span>
     {{/if}}
@@ -12,7 +12,7 @@
         {{> notificationItem}}
       {{/each}}
     {{else}}
-      <li><span>No Notifications</span></li>
+      <li><span>Sin notificaciones</span></li>
     {{/if}}
   </ul>
 </template>
@@ -20,7 +20,7 @@
 <template name="notificationItem">
   <li>
     <a href="{{notificationPostPath}}">
-      <strong>{{commenterName}}</strong> comento en tu post <strong>{{postTitle}}</strong>
+      <strong>{{commenterName}}</strong> comento en tu post <strong>{{postTtile}}</strong>
     </a>
   </li>
 </template>
